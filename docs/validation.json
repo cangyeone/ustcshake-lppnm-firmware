@@ -1,0 +1,56 @@
+{
+  "window": 3072,
+  "hop": 128,
+  "sample_rate_hz": 100,
+  "classes": 7,
+  "normalization": "causal trailing-window mean/centered-maxabs, old samples immutable",
+  "weight_quantization": "INT8 symmetric per-output-channel",
+  "activation_quantization": "INT8 symmetric per-tensor; INT32 accumulator; INT64 Q24 requantization",
+  "fp32_postprocessing": [
+    "softmax over all 7 classes",
+    "sigmoid time offset"
+  ],
+  "fused_bn_remaining": 0,
+  "quantized_convolutions": 39,
+  "checkpoint_sha256": "c3000fb216331e49af807c03a64fcbcd816afbba2939b6fba829b41cacd18185",
+  "calibration_source": "X1.53085.01.BHZ.D.20122080726235953.sac",
+  "calibration_samples": [
+    0,
+    12288
+  ],
+  "evaluation_samples": [
+    14336,
+    25600
+  ],
+  "float_stream_vs_full_max_abs_logit_or_offset_logit": 7.2479248046875e-05,
+  "int8_stream_vs_full_bit_exact": true,
+  "synthetic_alignment_bit_exact": true,
+  "reset_replay_exact": true,
+  "invalid_input_no_state_mutation": true,
+  "lookahead_samples_min": 212,
+  "lookahead_samples_max": 268,
+  "output_grid_samples": 8,
+  "steady_conv_macs_per_128": 631168,
+  "steady_conv_macs_per_second": 493100.0,
+  "full_3072_conv_macs": 15148032,
+  "stream_cache_peak_bytes_python_int8": 40012,
+  "portable_cache_allocated_bytes": 43874,
+  "raw_history_float32_bytes": 12288,
+  "int8_weight_bytes": 40104,
+  "int32_bias_bytes": 6400,
+  "int64_multiplier_bytes": 12912,
+  "heldout_quantization": {
+    "prob_mae": 0.00035841998760588467,
+    "prob_max_abs": 0.1738874614238739,
+    "offset_max_error_ms": 15.293169021606445,
+    "p_s_threshold_0_3_bin_disagreements": 0,
+    "p_s_bins": 2756
+  },
+  "causal_vs_legacy_normalization_probability_mae_one_window": 0.0007587368017993867,
+  "limitations": [
+    "single record; no labeled precision/recall validation",
+    "no ESP32-C3 timing or total SRAM measurement",
+    "lookahead and warmup are intentional; no fabricated right-boundary predictions",
+    "portable custom quantization, not an ESP-DL .espdl artifact"
+  ]
+}

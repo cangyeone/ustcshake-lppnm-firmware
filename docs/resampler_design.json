@@ -1,0 +1,8 @@
+{
+  "input_hz": 250,
+  "output_hz": 100,
+  "taps": 161,
+  "group_delay_us": 160000,
+  "passband_0_25_max_error_db": 0.00023211318123598053,
+  "stopband_55_250_max_db": -91.30335873043352
+}

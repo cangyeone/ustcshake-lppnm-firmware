@@ -1,0 +1,70 @@
+{
+  "duration_s": 120.01353120792191,
+  "status_count": 24,
+  "last_status": {
+    "type": "status",
+    "firmware": "v2.0.0-lppnm-dev",
+    "adc_ready": true,
+    "sample_rate_hz": 250,
+    "model_rate_hz": 100,
+    "window": 3072,
+    "hop": 128,
+    "quantization": "W8A8-fused",
+    "acquired": 28601,
+    "missed_adc": 0,
+    "invalid_adc": 0,
+    "nn_dropped": 0,
+    "nn_resets": 0,
+    "inference_us": 171164,
+    "inference_max_us": 174219,
+    "inference_blocks": 89,
+    "nn_queue_max": 43,
+    "adc_late_max_us": 543,
+    "adc_read_max_us": 1079,
+    "display_max_us": 12906,
+    "paper_overflow": 0,
+    "printed_rows": 7500,
+    "printer_bytes": 0,
+    "printing": false,
+    "dry_run": true,
+    "picks": 14,
+    "watermark_us": 112274476,
+    "heap_free": 73712,
+    "heap_min": 73084,
+    "range_index": 0,
+    "filter_hz": [
+      0.5,
+      10.0
+    ],
+    "key_raw": [
+      1,
+      1,
+      1
+    ]
+  },
+  "last_inference": {
+    "type": "inference",
+    "model_samples": 11392,
+    "p_probability": 2e-06,
+    "s_probability": 1e-06,
+    "threshold": 0.01,
+    "stack_min_bytes": [
+      3184,
+      4072,
+      3240
+    ]
+  },
+  "last_printer": {
+    "type": "printer",
+    "buffer_seconds": 6,
+    "phase_markers": 10,
+    "labels_dropped": 0
+  },
+  "usb_samples": 19990,
+  "usb_sequence_gaps": 0,
+  "faults": [],
+  "physical_print_tested": false,
+  "dryrun_requested": true,
+  "pass": true,
+  "host_read_timeout_fragments_reassembled": 1
+}

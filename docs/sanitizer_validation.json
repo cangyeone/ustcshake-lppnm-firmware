@@ -1,0 +1,7 @@
+{
+  "address_sanitizer": "passed",
+  "undefined_behavior_sanitizer": "passed",
+  "post_construction_push_reset_allocations": 0,
+  "native_reset_and_nonfinite_input_state_tests": "passed",
+  "scope": "host C++ tests; not ESP32-C3 execution"
+}

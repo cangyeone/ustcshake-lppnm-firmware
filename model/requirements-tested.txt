@@ -1,0 +1,6 @@
+# Reference environment: Python 3.12, macOS arm64
+numpy==2.5.4
+torch==2.11.0
+obspy==1.5.0
+onnx==1.17.0
+onnxruntime==1.25.0

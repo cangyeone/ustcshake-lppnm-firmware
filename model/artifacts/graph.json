@@ -1,0 +1,663 @@
+{
+  "nodes": [
+    {
+      "name": "input",
+      "kind": "input",
+      "parents": [],
+      "channels": 3,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.007874015748031496
+    },
+    {
+      "name": "layers.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        0
+      ],
+      "channels": 8,
+      "stride": 1,
+      "padding": 2,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.08225793913593442
+    },
+    {
+      "name": "layers.1.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        1
+      ],
+      "channels": 16,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.3225159232072004
+    },
+    {
+      "name": "layers.1.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        2
+      ],
+      "channels": 16,
+      "stride": 2,
+      "padding": 2,
+      "groups": 16,
+      "relu": true,
+      "scale": 0.15438561927615188
+    },
+    {
+      "name": "layers.1.conv.2",
+      "kind": "conv",
+      "parents": [
+        3
+      ],
+      "channels": 16,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.17418876407653328
+    },
+    {
+      "name": "layers.2.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        4
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.18326476990707277
+    },
+    {
+      "name": "layers.2.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        5
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 2,
+      "groups": 32,
+      "relu": true,
+      "scale": 0.13431624164731484
+    },
+    {
+      "name": "layers.2.conv.2",
+      "kind": "conv",
+      "parents": [
+        6
+      ],
+      "channels": 16,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.126881772138941
+    },
+    {
+      "name": "layers.2.add",
+      "kind": "add",
+      "parents": [
+        4,
+        7
+      ],
+      "channels": 16,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.17895519827294537
+    },
+    {
+      "name": "layers.3.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        8
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.18147120137852946
+    },
+    {
+      "name": "layers.3.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        9
+      ],
+      "channels": 32,
+      "stride": 2,
+      "padding": 2,
+      "groups": 32,
+      "relu": true,
+      "scale": 0.12571192163182057
+    },
+    {
+      "name": "layers.3.conv.2",
+      "kind": "conv",
+      "parents": [
+        10
+      ],
+      "channels": 24,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.10654385634294646
+    },
+    {
+      "name": "layers.4.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        11
+      ],
+      "channels": 48,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.10052717764546552
+    },
+    {
+      "name": "layers.4.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        12
+      ],
+      "channels": 48,
+      "stride": 1,
+      "padding": 2,
+      "groups": 48,
+      "relu": true,
+      "scale": 0.19754333195723886
+    },
+    {
+      "name": "layers.4.conv.2",
+      "kind": "conv",
+      "parents": [
+        13
+      ],
+      "channels": 24,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.17465806195116418
+    },
+    {
+      "name": "layers.4.add",
+      "kind": "add",
+      "parents": [
+        11,
+        14
+      ],
+      "channels": 24,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.1821506530281127
+    },
+    {
+      "name": "layers.5.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        15
+      ],
+      "channels": 48,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.2855590760238527
+    },
+    {
+      "name": "layers.5.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        16
+      ],
+      "channels": 48,
+      "stride": 2,
+      "padding": 2,
+      "groups": 48,
+      "relu": true,
+      "scale": 0.11727539573128767
+    },
+    {
+      "name": "layers.5.conv.2",
+      "kind": "conv",
+      "parents": [
+        17
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.03134950690382109
+    },
+    {
+      "name": "layers.6.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        18
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.18046464694766548
+    },
+    {
+      "name": "layers.6.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        19
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.21567026273472104
+    },
+    {
+      "name": "layers.6.conv.2",
+      "kind": "conv",
+      "parents": [
+        20
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.056058842366135966
+    },
+    {
+      "name": "layers.6.add",
+      "kind": "add",
+      "parents": [
+        18,
+        21
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.06242758082592581
+    },
+    {
+      "name": "class_encoder.0.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        22
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.14209666214589997
+    },
+    {
+      "name": "class_encoder.0.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        23
+      ],
+      "channels": 64,
+      "stride": 2,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.11523074052465243
+    },
+    {
+      "name": "class_encoder.0.conv.2",
+      "kind": "conv",
+      "parents": [
+        24
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.11827667867104838
+    },
+    {
+      "name": "class_encoder.1.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        25
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.19033640763891024
+    },
+    {
+      "name": "class_encoder.1.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        26
+      ],
+      "channels": 64,
+      "stride": 2,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.15825959453432578
+    },
+    {
+      "name": "class_encoder.1.conv.2",
+      "kind": "conv",
+      "parents": [
+        27
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.11583412350632075
+    },
+    {
+      "name": "class_encoder.2.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        28
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.15617363096222164
+    },
+    {
+      "name": "class_encoder.2.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        29
+      ],
+      "channels": 64,
+      "stride": 2,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.24887847900390625
+    },
+    {
+      "name": "class_encoder.2.conv.2",
+      "kind": "conv",
+      "parents": [
+        30
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.029177705133993793
+    },
+    {
+      "name": "class_encoder.3.0",
+      "kind": "up",
+      "parents": [
+        31
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.029177705133993793
+    },
+    {
+      "name": "class_encoder.3.1.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        32
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.2079649046650083
+    },
+    {
+      "name": "class_encoder.3.1.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        33
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.19187361048901175
+    },
+    {
+      "name": "class_encoder.3.1.conv.2",
+      "kind": "conv",
+      "parents": [
+        34
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.0425317719226747
+    },
+    {
+      "name": "class_encoder.3.1.add",
+      "kind": "add",
+      "parents": [
+        32,
+        35
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.05753959820965144
+    },
+    {
+      "name": "class_encoder.4.0",
+      "kind": "up",
+      "parents": [
+        36
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.05753959820965144
+    },
+    {
+      "name": "class_encoder.4.1.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        37
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.2632797721802719
+    },
+    {
+      "name": "class_encoder.4.1.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        38
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.1383227250707431
+    },
+    {
+      "name": "class_encoder.4.1.conv.2",
+      "kind": "conv",
+      "parents": [
+        39
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.050457473814956785
+    },
+    {
+      "name": "class_encoder.4.1.add",
+      "kind": "add",
+      "parents": [
+        37,
+        40
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.0676300919900729
+    },
+    {
+      "name": "class_encoder.5.0",
+      "kind": "up",
+      "parents": [
+        41
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.0676300919900729
+    },
+    {
+      "name": "class_encoder.5.1.conv.0.0.conv",
+      "kind": "conv",
+      "parents": [
+        42
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": true,
+      "scale": 0.2524979959322712
+    },
+    {
+      "name": "class_encoder.5.1.conv.1.0.conv",
+      "kind": "conv",
+      "parents": [
+        43
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 2,
+      "groups": 64,
+      "relu": true,
+      "scale": 0.1306362903024268
+    },
+    {
+      "name": "class_encoder.5.1.conv.2",
+      "kind": "conv",
+      "parents": [
+        44
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.04845625959982083
+    },
+    {
+      "name": "class_encoder.5.1.add",
+      "kind": "add",
+      "parents": [
+        42,
+        45
+      ],
+      "channels": 32,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.07256071586308517
+    },
+    {
+      "name": "features",
+      "kind": "cat",
+      "parents": [
+        22,
+        46
+      ],
+      "channels": 64,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.07256071586308517
+    },
+    {
+      "name": "cl",
+      "kind": "conv",
+      "parents": [
+        47
+      ],
+      "channels": 7,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.6509857778474102
+    },
+    {
+      "name": "tm",
+      "kind": "conv",
+      "parents": [
+        47
+      ],
+      "channels": 1,
+      "stride": 1,
+      "padding": 0,
+      "groups": 1,
+      "relu": false,
+      "scale": 0.023956728732492043
+    }
+  ],
+  "heads": [
+    48,
+    49
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "normalized": {
+    "blocks": 200,
+    "mean_ms_host": 0.578953,
+    "max_ms_host": 0.829041,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 125923472
+  },
+  "raw_with_causal_normalizer": {
+    "blocks": 200,
+    "mean_ms_host": 0.537721,
+    "max_ms_host": 0.629375,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 125923472
+  },
+  "edge_0": {
+    "blocks": 32,
+    "mean_ms_host": 0.528323,
+    "max_ms_host": 0.562583,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "edge_1": {
+    "blocks": 32,
+    "mean_ms_host": 0.527313,
+    "max_ms_host": 0.573709,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "edge_2": {
+    "blocks": 32,
+    "mean_ms_host": 0.525525,
+    "max_ms_host": 0.581292,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "edge_3": {
+    "blocks": 32,
+    "mean_ms_host": 0.533673,
+    "max_ms_host": 0.583292,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "edge_4": {
+    "blocks": 32,
+    "mean_ms_host": 0.526488,
+    "max_ms_host": 0.552416,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "quantization_half_steps": {
+    "blocks": 32,
+    "mean_ms_host": 0.524888,
+    "max_ms_host": 0.559125,
+    "allocated_bytes_host_abi": 73330,
+    "macs": 19887248
+  },
+  "onnx_valid_and_matches_fused": true,
+  "all_native_int8_outputs_bit_exact": true,
+  "native_normalization_matches_python": true,
+  "emission_delay_seconds_range": [
+    2.48,
+    3.68
+  ]
+}
