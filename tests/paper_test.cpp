@@ -11,7 +11,8 @@ int main(int argc,char** argv) {
     uint8_t row[48]{};
     float value=20*std::sin(y*.17f)+110*std::exp(-std::pow((y-125)/35.f,2))*std::sin(y*.33f)+70*std::exp(-std::pow((y-300)/40.f,2))*std::sin(y*.25f);
     int x=amplitude_pixel(value,150,246,118);
-    for(int k=std::min(x,previous);k<=std::max(x,previous);k++) paperPixel(row,k);previous=x;
+    for(int k=std::min(x,previous);k<=std::max(x,previous);k++) { paperPixel(row,k); }
+    previous=x;
     paperPixel(row,126);paperPixel(row,366);if(y%5==0) paperPixel(row,246);
     if(y%125==0) for(int k=126;k<=366;k+=4) paperPixel(row,k);
     if(y==125) labels.add({1'000'000,.123f,1},1'793'361'600'000'000LL);
